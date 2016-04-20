@@ -16,6 +16,7 @@ Plugin 'mbbill/fencview'
 Plugin 'vim-scripts/Visual-Mark'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'google/vim-searchindex'
+Plugin 'fatih/vim-go'
 call vundle#end()
 filetype plugin indent on
 call glaive#Install()
