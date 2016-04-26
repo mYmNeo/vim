@@ -9,7 +9,7 @@ Plugin 'google/vim-glaive'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-scripts/LargeFile'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'Raimondi/delimitMate'
 Plugin 'mbbill/fencview'
@@ -17,6 +17,9 @@ Plugin 'vim-scripts/Visual-Mark'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'google/vim-searchindex'
 Plugin 'fatih/vim-go'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'google/vim-colorscheme-primary'
 call vundle#end()
 filetype plugin indent on
 call glaive#Install()
@@ -113,11 +116,12 @@ let g:SuperTabDefaultCompletionType = "context"
 " Solarized Vim
 syntax enable
 set background=dark
-let g:solarized_termtrans=1
-let g:solarized_termcolors=256
-let g:solarized_contrast="high"
-let g:solarized_visibility="high"
-colorscheme solarized
+"let g:solarized_termtrans=1
+"let g:solarized_termcolors=256
+"let g:solarized_contrast="high"
+"let g:solarized_visibility="high"
+"colorscheme solarized
+colorscheme primary
 
 " set paste
 noremap <leader>sp :set paste<CR>
@@ -135,3 +139,19 @@ nnoremap <f4> :YcmDiag<CR>
 
 " not change clipboard
 xnoremap p pgvy
+
+" nerdTree for git
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ "Unknown"   : "?"
+    \ }
+
+" open nerdTree
+map <leader>t :NERDTreeToggle<CR>
