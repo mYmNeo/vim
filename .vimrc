@@ -20,6 +20,7 @@ Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'google/vim-colorscheme-primary'
+Plugin 'airblade/vim-gitgutter'
 call vundle#end()
 filetype plugin indent on
 call glaive#Install()
