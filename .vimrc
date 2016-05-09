@@ -21,6 +21,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'google/vim-colorscheme-primary'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'artur-shaik/vim-javacomplete2'
 call vundle#end()
 filetype plugin indent on
 call glaive#Install()
@@ -156,3 +157,13 @@ let g:NERDTreeIndicatorMapCustom = {
 
 " open nerdTree
 map <leader>t :NERDTreeToggle<CR>
+
+" gitgutter
+nmap ]h <Plug>GitGutterNextHunk
+nmap [h <Plug>GitGutterPrevHunk
+
+" java complete2
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
+let g:JavaComplete_UseFQN=1
+nmap <F5> <Plug>(JavaComplete-Imports-Add)
+imap <F5> <Plug>(JavaComplete-Imports-Add)
