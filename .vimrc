@@ -22,6 +22,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'google/vim-colorscheme-primary'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'artur-shaik/vim-javacomplete2'
+Plugin 'majutsushi/tagbar'
 call vundle#end()
 filetype plugin indent on
 call glaive#Install()
@@ -167,3 +168,35 @@ autocmd FileType java setlocal omnifunc=javacomplete#Complete
 let g:JavaComplete_UseFQN=1
 nmap <F5> <Plug>(JavaComplete-Imports-Add)
 imap <F5> <Plug>(JavaComplete-Imports-Add)
+
+" gotags
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+\ }
+
+" ctag
+nmap <leader>c :TagbarToggle<CR>
