@@ -80,6 +80,7 @@ set gdefault
 
 " Better Search
 set hlsearch
+set smartcase
 
 " Hide matched on <Leader>space
 nnoremap <leader><space> :nohlsearch<CR>
