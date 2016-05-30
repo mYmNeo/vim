@@ -201,3 +201,14 @@ let g:tagbar_type_go = {
 
 " ctag
 nmap <leader>c :TagbarToggle<CR>
+
+" cscope
+if filereadable("cscope.out")
+  cs add cscope.out
+endif
+
+nmap <leader>fc :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <leader>fe :cs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <leader>ff :cs find f <C-R>=expand("<cword>")<CR><CR>
+nmap <leader>fg :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <leader>ft :cs find t <C-R>=expand("<cword>")<CR><CR>
