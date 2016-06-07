@@ -114,7 +114,6 @@ set cmdheight=2
 set laststatus=2
 set showcmd
 set showmode
-set number
 
 " SuperTab
 let g:SuperTabDefaultCompletionType = "context"
@@ -216,4 +215,4 @@ nmap <leader>fg :cs find g <C-R>=expand("<cword>")<CR><CR>
 nmap <leader>ft :cs find t <C-R>=expand("<cword>")<CR><CR>
 
 " airline
-" let g:airline_theme=wombat
+let g:airline_theme='wombat'
