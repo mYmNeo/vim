@@ -23,6 +23,8 @@ Plugin 'google/vim-colorscheme-primary'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'artur-shaik/vim-javacomplete2'
 Plugin 'majutsushi/tagbar'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 filetype plugin indent on
 call glaive#Install()
@@ -212,3 +214,6 @@ nmap <leader>fe :cs find e <C-R>=expand("<cword>")<CR><CR>
 nmap <leader>ff :cs find f <C-R>=expand("<cword>")<CR><CR>
 nmap <leader>fg :cs find g <C-R>=expand("<cword>")<CR><CR>
 nmap <leader>ft :cs find t <C-R>=expand("<cword>")<CR><CR>
+
+" airline
+" let g:airline_theme=wombat
