@@ -201,7 +201,7 @@ let g:tagbar_type_go = {
 \ }
 
 " ctag
-nmap <leader>c :TagbarToggle<CR>
+nmap <leader>tt :TagbarToggle<CR>
 
 " cscope
 if filereadable("cscope.out")
