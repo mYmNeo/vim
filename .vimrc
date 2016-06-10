@@ -216,3 +216,6 @@ nmap <leader>ft :cs find t <C-R>=expand("<cword>")<CR><CR>
 
 " airline
 let g:airline_theme='wombat'
+
+" codfmt
+Glaive codefmt clang_format_style='Google'
