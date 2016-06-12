@@ -45,7 +45,6 @@ set smarttab
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-set expandtab
 
 " Fix backspace indentation
 set backspace=indent,eol,start
@@ -114,6 +113,7 @@ set cmdheight=2
 set laststatus=2
 set showcmd
 set showmode
+set number
 
 " SuperTab
 let g:SuperTabDefaultCompletionType = "context"
@@ -219,3 +219,6 @@ let g:airline_theme='wombat'
 
 " codfmt
 Glaive codefmt clang_format_style='Google'
+
+" gtag
+let g:go_guru_tags='linux'
