@@ -221,3 +221,6 @@ Glaive codefmt clang_format_style='Google'
 
 " gtag
 let g:go_guru_tags='linux'
+
+" bookmark
+let g:bookmark_save_per_working_dir = 1
