@@ -113,6 +113,7 @@ set laststatus=2
 set showcmd
 set showmode
 set number
+set relativenumber
 
 " SuperTab
 let g:SuperTabDefaultCompletionType = "context"
