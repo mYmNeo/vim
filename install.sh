@@ -7,6 +7,6 @@ repos=$(find ${bin}/ -maxdepth 3 -name ".git")
 for repo in ${repos[@]}; do
   cd $(dirname ${repo})
   echo "sync $repo"
-  git pull
+  git pull origin master
   git submodule update --init --recursive
 done
