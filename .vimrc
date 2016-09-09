@@ -40,10 +40,12 @@ set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set encoding=utf-8
 
 " Tab Settings
+set modeline
 set smarttab
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
+set expandtab
 
 " Fix backspace indentation
 set backspace=indent,eol,start
