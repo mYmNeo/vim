@@ -239,3 +239,6 @@ function! AppendModeline()
   call append(line("$"), l:modeline)
 endfunction
 nnoremap <silent> <leader>ml :call AppendModeline()<CR>
+
+" spell checker
+set spell spelllang=en_us
