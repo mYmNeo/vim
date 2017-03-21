@@ -89,7 +89,7 @@ set smartcase
 nnoremap <leader><space> :nohlsearch<CR>
 
 " goto the middle of a line
-nnoremap <leader>m :call cursor(0, len(getline('.'))/2)<CR>
+"nnoremap <leader>m :call cursor(0, len(getline('.'))/2)<CR>
 
 " Quit windows on <leader>q
 nnoremap <leader>q :q<CR>
@@ -109,14 +109,14 @@ nnoremap <leader>vp :vsplit<CR>
 " fencview
 "let g:fencview_autodetect=1
 
-" Make the commadn line two lines high and change the statusline display to
+" Make the command line two lines high and change the statusline display to
 " something that looks useful.
 set cmdheight=2
 set laststatus=2
 set showcmd
 set showmode
 set number
-set relativenumber
+"set relativenumber
 
 " SuperTab
 let g:SuperTabDefaultCompletionType = "context"
@@ -146,7 +146,7 @@ let g:ycm_confirm_extra_conf=0
 nnoremap <f4> :YcmDiag<CR>
 
 " not change clipboard
-xnoremap p pgvy
+"xnoremap p pgvy
 
 " nerdTree for git
 let g:NERDTreeIndicatorMapCustom = {
@@ -211,11 +211,11 @@ if filereadable("cscope.out")
   cs add cscope.out
 endif
 
-nmap <leader>fc :cs find c <C-R>=expand("<cword>")<CR><CR>
-nmap <leader>fe :cs find e <C-R>=expand("<cword>")<CR><CR>
-nmap <leader>ff :cs find f <C-R>=expand("<cword>")<CR><CR>
-nmap <leader>fg :cs find g <C-R>=expand("<cword>")<CR><CR>
-nmap <leader>ft :cs find t <C-R>=expand("<cword>")<CR><CR>
+"nmap <leader>fc :cs find c <C-R>=expand("<cword>")<CR><CR>
+"nmap <leader>fe :cs find e <C-R>=expand("<cword>")<CR><CR>
+"nmap <leader>ff :cs find f <C-R>=expand("<cword>")<CR><CR>
+"nmap <leader>fg :cs find g <C-R>=expand("<cword>")<CR><CR>
+"nmap <leader>ft :cs find t <C-R>=expand("<cword>")<CR><CR>
 
 " airline
 let g:airline_theme='wombat'
