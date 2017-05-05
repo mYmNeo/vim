@@ -24,7 +24,6 @@ Plugin 'majutsushi/tagbar'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'MattesGroeger/vim-bookmarks'
-Plugin 'rizzatti/dash.vim'
 call vundle#end()
 filetype plugin indent on
 call glaive#Install()
@@ -167,6 +166,7 @@ map <leader>t :NERDTreeToggle<CR>
 " gitgutter
 nmap ]h <Plug>GitGutterNextHunk
 nmap [h <Plug>GitGutterPrevHunk
+let g:gitgutter_max_signs=1000
 
 " java complete2
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
@@ -211,11 +211,11 @@ if filereadable("cscope.out")
   cs add cscope.out
 endif
 
-"nmap <leader>fc :cs find c <C-R>=expand("<cword>")<CR><CR>
-"nmap <leader>fe :cs find e <C-R>=expand("<cword>")<CR><CR>
-"nmap <leader>ff :cs find f <C-R>=expand("<cword>")<CR><CR>
-"nmap <leader>fg :cs find g <C-R>=expand("<cword>")<CR><CR>
-"nmap <leader>ft :cs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <leader>fc :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <leader>fe :cs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <leader>ff :cs find f <C-R>=expand("<cword>")<CR><CR>
+nmap <leader>fg :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <leader>ft :cs find t <C-R>=expand("<cword>")<CR><CR>
 
 " airline
 let g:airline_theme='wombat'
