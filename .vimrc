@@ -19,7 +19,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'google/vim-colorscheme-primary'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'artur-shaik/vim-javacomplete2'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -211,10 +210,15 @@ if filereadable("cscope.out")
   cs add cscope.out
 endif
 
+" Find functions calling this function
 nmap <leader>fc :cs find c <C-R>=expand("<cword>")<CR><CR>
+" Find this egrep pattern
 nmap <leader>fe :cs find e <C-R>=expand("<cword>")<CR><CR>
+" Find this file
 nmap <leader>ff :cs find f <C-R>=expand("<cword>")<CR><CR>
+" Find this definition
 nmap <leader>fg :cs find g <C-R>=expand("<cword>")<CR><CR>
+" Find this text string
 nmap <leader>ft :cs find t <C-R>=expand("<cword>")<CR><CR>
 
 " airline
