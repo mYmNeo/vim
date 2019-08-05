@@ -10,4 +10,3 @@ for repo in ${repos[@]}; do
   git pull origin master
   git submodule update --init --recursive
 done
-${bin}/bundle/YouCompleteMe/install.py --clang-completer --gocode-completer
