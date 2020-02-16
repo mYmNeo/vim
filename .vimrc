@@ -162,8 +162,8 @@ let g:NERDTreeIndicatorMapCustom = {
 map <leader>t :NERDTreeToggle<CR>
 
 " gitgutter
-nmap ]h <Plug>GitGutterNextHunk
-nmap [h <Plug>GitGutterPrevHunk
+nmap ]h <Plug>(GitGutterNextHunk)
+nmap [h <Plug>(GitGutterPrevHunk)
 let g:gitgutter_max_signs=1000
 
 " java complete2
