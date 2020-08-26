@@ -146,7 +146,7 @@ nnoremap <f4> :YcmDiag<CR>
 "xnoremap p pgvy
 
 " nerdTree for git
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
     \ "Untracked" : "✭",
