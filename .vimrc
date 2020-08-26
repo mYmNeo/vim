@@ -19,6 +19,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'google/vim-colorscheme-primary'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'majutsushi/tagbar'
+Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'MattesGroeger/vim-bookmarks'
@@ -118,15 +119,11 @@ set number
 " SuperTab
 let g:SuperTabDefaultCompletionType = "context"
 
-" Solarized Vim
+" Color Theme
 syntax enable
 set background=dark
-"let g:solarized_termtrans=1
-"let g:solarized_termcolors=256
-"let g:solarized_contrast="high"
-"let g:solarized_visibility="high"
-"colorscheme solarized
-colorscheme primary
+colorscheme PaperColor
+let g:airline_theme='papercolor'
 
 " set paste
 noremap <leader>sp :set paste<CR>
