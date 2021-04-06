@@ -243,3 +243,6 @@ nnoremap <silent> <leader>ml :call AppendModeline()<CR>
 " vim-go
 let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+
+" YCM
+let g:ycm_log_level='critical'
